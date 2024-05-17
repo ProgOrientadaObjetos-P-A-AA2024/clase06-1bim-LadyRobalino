@@ -15,10 +15,11 @@ public class Computador {
    private double costoComputador;
    
     
-    public Computador(String n, Procesador p, Memoria m){
+    public Computador(String n, Memoria p, Procesador m){
         marca = n;
-        procesador = p;
-        memoria = m;
+        memoria = p;
+        procesador = m;
+        establecerCostoComputador();
     }
     
     public void establecerMarca(String n){
@@ -50,17 +51,5 @@ public class Computador {
         return costoComputador;
     }
     
-     @Override
-    public String toString() {
-        String cadena = String.format("%s - %s - %.2f - %s - %.2f - %.2f\n",
-                                     obtenerMarca(),
-                                     obtenerProcesador().obtenerMarca(),
-                                     obtenerProcesador().obtenerCosto(),
-                                     obtenerMemoria().obtenerMarca(),
-                                     obtenerMemoria().obtenerCosto(),
-                                     obtenerCostoComputador());
-        return cadena;
-
-    }
-
+   
 }
