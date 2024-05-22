@@ -1,6 +1,6 @@
 /*
  * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template file, choose  Tools | Templates
  * and open the template in the editor.
  */
 package paquete4;
@@ -14,7 +14,7 @@ public class Ejecutor {
         
         Empresa c1 = new Empresa("Textiles del Ecuador", "Quito");
         
-        /*
+        
         ArchivoEscritura escritura = new ArchivoEscritura(nombreArchivo);
         // establecer el valor del atributo registro
         escritura.establecerRegistro(c1);
@@ -27,6 +27,6 @@ public class Ejecutor {
         // System.out.println(lectura.toString());
         System.out.println(lectura);
         lectura.cerrarArchivo();
-        */
+        
     }
 }

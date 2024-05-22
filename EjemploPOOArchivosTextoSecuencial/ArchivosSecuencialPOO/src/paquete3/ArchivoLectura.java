@@ -80,6 +80,12 @@ public class ArchivoLectura {
 
                 ArrayList<String> cadenaProfesor = new ArrayList<>(
                         Arrays.asList(profesor.split("\\|")));
+                /*
+                El backslash nos sirve para que nos permita poner otro caracter 
+                diferente del ";" y de la ","
+                */
+                
+                
                 // ["Tara Hernandez", "contratado"]
                 //        0                 1
 
