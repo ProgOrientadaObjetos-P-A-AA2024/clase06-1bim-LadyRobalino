@@ -56,6 +56,10 @@ public class ArchivoLectura {
     // establecer valores de cada línea
     // en la lista de tipo Profesor
     public void establecerLista() {
+        /*
+        Este metodo nos permite crear un arrayList que nos permite separar las 
+        palabras cunado vea un punto y coma.
+        */
         lista = new ArrayList<>();
         File f = new File(rutaArchivo);
 
@@ -80,11 +84,12 @@ public class ArchivoLectura {
 
         return lista;
     }
-
+    
+   
     public void cerrarArchivo() {
         if (entrada != null) {
             entrada.close();
-        } // cierra el archivo
+        } // cierra el archivo NO OLVIDAR
 
     }
 

@@ -23,9 +23,10 @@ public class ArchivoEscritura {
 
     public ArchivoEscritura(String n) {
         nombreArchivo = n;
-        rutaArchivo = String.format("data/%s", nombreArchivo); // "data/profesores2.txt"
-        
+        rutaArchivo = String.format("data/%s", nombreArchivo); // "data/profesores2.txt"        
     }
+    
+    
 
     public void establecerNombreArchivo(String n) {
         nombreArchivo = n;
@@ -74,7 +75,7 @@ public class ArchivoEscritura {
     public void cerrarArchivo() {
         if (salidaArchivo != null) {
             salidaArchivo.close();
-        } // cierra el archivo
+        } // cierra el archivo No olvidar
 
     }
 
